@@ -1,0 +1,15 @@
+
+roslaunch sc_mini start.launch 
+
+roslaunch hector_slam_launch tutorial_test.launch
+
+rosrun waypoint_race_car_control waypoint_race_car_control_node
+
+rosrun race_waypoints_move race_waypoints_move_node
+
+rosrun m_race_vision race_opencv_vision_node
+
+rosrun m_race_car_base_control m_race_car_control_node
+
+rosrun m_race_car_base_control teleop.py
+
